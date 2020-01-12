@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup as bs
 from selenium import webdriver
+import datetime
+import time
 
 def full_page_soup(uri, scroll_pause_secs=1, early_break=None):
     """Takes a URI as argument -- then loads page, scrolls to bottom of window (assuming limited data and not infinite scroll), 
